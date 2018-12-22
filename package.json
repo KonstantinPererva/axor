@@ -15,7 +15,8 @@
     "gulp-sass": "^3.1.0"
   },
   "scripts": {
-    "build": "babel app/js -d app/build --presets es2015 -w"
+    "build": "babel app/js -d app/build --presets es2015 -w",
+    "watch": "gulp watch"
   },
   "author": "ilya",
   "license": "ISC"
