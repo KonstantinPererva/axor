@@ -1,0 +1,25 @@
+.catalog-sidebar-line-link {
+  text-decoration: none;
+  outline: none;
+  transition: .15s;
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  &:focus, &:active {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &__ico-wrap {}
+
+  &__ico {
+    display: block;
+    margin: 0 auto;
+  }
+}

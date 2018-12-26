@@ -1,0 +1,14 @@
+.catalog-sidebar-line-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    margin: 0 16px;
+    padding: 15px 0;
+  }
+}

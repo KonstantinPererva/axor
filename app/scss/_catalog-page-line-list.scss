@@ -1,0 +1,14 @@
+.catalog-page-line-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-shrink: 0;
+    width: 33.33%;
+    padding: 10px;
+  }
+}

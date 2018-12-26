@@ -1,0 +1,39 @@
+.catalog-sidebar-material-link {
+  color: #888;
+  text-decoration: none;
+  outline: none;
+  transition: .15s;
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  &:focus, &:active {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__img-wrap {
+    display: block;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $f-dr;
+    text-align: center;
+    padding: 10px 0;
+  }
+}

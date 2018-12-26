@@ -16,6 +16,26 @@
         <div class="catalog-container">
             <div class="catalog-container__left">
                 <div class="catalog-sidebar">
+                    <div class="catalog-sidebar__search">
+                        <form action="!" class="form-search">
+                            <div class="form-search__row">
+                                <button type="submit" class="form-search__button">
+                                    <svg
+                                        class="form-search__ico"
+                                        width="25"
+                                        height="25"
+                                        viewBox="0 0 31 31"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.9251 24.1602C6.30206 24.1602 0.914062 18.7722 0.914062 12.1502C0.914062 5.52816 6.30206 0.13916 12.9251 0.13916C19.5481 0.13916 24.9351 5.52716 24.9351 12.1502C24.9351 18.7732 19.5471 24.1602 12.9251 24.1602ZM12.9251 3.13916C7.95606 3.13916 3.91406 7.18116 3.91406 12.1502C3.91406 17.1182 7.95606 21.1602 12.9251 21.1602C17.8931 21.1602 21.9351 17.1182 21.9351 12.1502C21.9351 7.18116 17.8931 3.13916 12.9251 3.13916Z" fill="#888888"/>
+                                        <path d="M29.305 30.3111C28.921 30.3111 28.537 30.1651 28.244 29.8721L19.24 20.8681C18.654 20.2831 18.654 19.3321 19.24 18.7471C19.826 18.1611 20.775 18.1611 21.361 18.7471L30.365 27.7511C30.951 28.3361 30.951 29.2871 30.365 29.8721C30.072 30.1651 29.688 30.3111 29.305 30.3111Z" fill="#888888"/>
+                                    </svg>
+                                </button>
+                                <input type="text" class="form-search__input form-search__input_white" placeholder="ПОШУК">
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="catalog-sidebar-menu">
                         <div class="catalog-sidebar-menu__material">
                             <ul class="catalog-sidebar-material-list">
@@ -125,62 +145,221 @@
                             </ul>
                         </div>
 
-                        <div class="catalog-sidebar-menu__categories"></div>
+                        <div class="catalog-sidebar-menu__categories">
+                            <ul class="catalog-sidebar-categories-list">
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Петльова група</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Привода</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Кутовi передачi</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Подовжувачі</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Ножицi</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Профілезалежні eлементи</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Додаткові елементи</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Шаблони </span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Гільйотини</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Регулювальні ключі</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Варіанти комплектів фурнітури</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="catalog-container__right">
                 <div class="catalog-page">
-                    <div class="catalog-page__search">
-                        <form action="!" class="form-search">
-                            <div class="form-search__row">
-                                <button type="submit" class="form-search__button">
-                                    <svg
-                                        class="form-search__ico"
-                                        width="25"
-                                        height="25"
-                                        viewBox="0 0 31 31"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.9251 24.1602C6.30206 24.1602 0.914062 18.7722 0.914062 12.1502C0.914062 5.52816 6.30206 0.13916 12.9251 0.13916C19.5481 0.13916 24.9351 5.52716 24.9351 12.1502C24.9351 18.7732 19.5471 24.1602 12.9251 24.1602ZM12.9251 3.13916C7.95606 3.13916 3.91406 7.18116 3.91406 12.1502C3.91406 17.1182 7.95606 21.1602 12.9251 21.1602C17.8931 21.1602 21.9351 17.1182 21.9351 12.1502C21.9351 7.18116 17.8931 3.13916 12.9251 3.13916Z" fill="#707070"/>
-                                        <path d="M29.305 30.3111C28.921 30.3111 28.537 30.1651 28.244 29.8721L19.24 20.8681C18.654 20.2831 18.654 19.3321 19.24 18.7471C19.826 18.1611 20.775 18.1611 21.361 18.7471L30.365 27.7511C30.951 28.3361 30.951 29.2871 30.365 29.8721C30.072 30.1651 29.688 30.3111 29.305 30.3111Z" fill="#707070"/>
-                                    </svg>
-                                </button>
-                                <input type="text" class="form-search__input" placeholder="ПОШУК">
-                            </div>
-                        </form>
+                    <div class="catalog-page__breadcrumbs">
+                        <div class="breadcrumb">
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">
+                                            Деревина
+                                        </span>
+
+                                        <span class="breadcrumb-link__ico-wrap">
+                                            <svg
+                                                class="breadcrumb-link__ico"
+                                                width="5" viewBox="0 0 54 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.4199 100.16C1.94916 100.693 2.66835 100.995 3.4199 101C3.79289 101.003 4.16267 100.931 4.50657 100.786C4.85047 100.642 5.16126 100.429 5.4199 100.16L52.5799 52.9998C52.8448 52.7384 53.0551 52.427 53.1986 52.0837C53.3421 51.7404 53.416 51.3719 53.416 50.9998C53.416 50.6277 53.3421 50.2593 53.1986 49.9159C53.0551 49.5726 52.8448 49.2612 52.5799 48.9998L5.4199 1.82981C5.16059 1.55261 4.84817 1.33041 4.50122 1.17642C4.15428 1.02244 3.7799 0.939826 3.40037 0.933499C3.02084 0.927171 2.64392 0.997259 2.29203 1.13959C1.94014 1.28192 1.62048 1.49359 1.35208 1.76199C1.08367 2.0304 0.872009 2.35006 0.729678 2.70194C0.587346 3.05383 0.517259 3.43075 0.523587 3.81028C0.529914 4.18981 0.612528 4.56419 0.76651 4.91114C0.920493 5.25808 1.1427 5.57051 1.4199 5.82981L46.5799 50.9998L1.4199 96.1598C1.15625 96.4219 0.947019 96.7335 0.804243 97.0768C0.661468 97.42 0.587965 97.7881 0.587965 98.1598C0.587965 98.5316 0.661468 98.8996 0.804243 99.2429C0.947019 99.5861 1.15625 99.8977 1.4199 100.16V100.16Z" fill="#4c4c4c"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">
+                                            Smart Line S+
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="catalog-page__materials">
-                        <ul class="catalog-page-materials-list">
-                            <li class="catalog-page-materials-list__item">
-                                <div class="catalog-page-materials-link">
-                                    <div class="catalog-page-materials-link__img-wrap">
-                                        <img src="images/catalog-materials/img-1.png" alt="pvc" class="catalog-page-materials-link__img">
+                    <div class="catalog-page__categories">
+                        <ul class="catalog-page-categories-list">
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/1.png" alt="img" class="catalog-page-categories-link__img">
                                     </div>
 
-                                    <span class="catalog-page-materials-link__text">ПВХ</span>
+                                    <span class="catalog-page-categories-link__text">Петльова група</span>
                                 </div>
                             </li>
 
-                            <li class="catalog-page-materials-list__item">
-                                <div class="catalog-page-materials-link">
-                                    <div class="catalog-page-materials-link__img-wrap">
-                                        <img src="images/catalog-materials/img-2.png" alt="wood" class="catalog-page-materials-link__img">
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/2.png" alt="img" class="catalog-page-categories-link__img">
                                     </div>
 
-                                    <span class="catalog-page-materials-link__text">ДЕРЕВО</span>
+                                    <span class="catalog-page-categories-link__text">Привода</span>
                                 </div>
                             </li>
 
-                            <li class="catalog-page-materials-list__item">
-                                <div class="catalog-page-materials-link">
-                                    <div class="catalog-page-materials-link__img-wrap">
-                                        <img src="images/catalog-materials/img-3.png" alt="aluminum" class="catalog-page-materials-link__img">
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/3.png" alt="img" class="catalog-page-categories-link__img">
                                     </div>
 
-                                    <span class="catalog-page-materials-link__text">АЛЮМИНИЙ</span>
+                                    <span class="catalog-page-categories-link__text">Кутові передачі</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/4.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Подовжувачі</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/5.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Ножицi</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/6.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Профілезалежні eлементи</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/7.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Додаткові елементи</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/1.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Шаблони </span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/2.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Гільйотини</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/3.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Регулювальні ключі</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-group/4.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Варіанти комплектів фурнітури</span>
                                 </div>
                             </li>
                         </ul>

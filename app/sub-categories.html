@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AXOR</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header></header>
+
+    <div class="catalog">
+        <div class="catalog-container">
+            <div class="catalog-container__left">
+                <div class="catalog-sidebar">
+                    <div class="catalog-sidebar__search">
+                        <form action="!" class="form-search">
+                            <div class="form-search__row">
+                                <button type="submit" class="form-search__button">
+                                    <svg
+                                        class="form-search__ico"
+                                        width="25"
+                                        height="25"
+                                        viewBox="0 0 31 31"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.9251 24.1602C6.30206 24.1602 0.914062 18.7722 0.914062 12.1502C0.914062 5.52816 6.30206 0.13916 12.9251 0.13916C19.5481 0.13916 24.9351 5.52716 24.9351 12.1502C24.9351 18.7732 19.5471 24.1602 12.9251 24.1602ZM12.9251 3.13916C7.95606 3.13916 3.91406 7.18116 3.91406 12.1502C3.91406 17.1182 7.95606 21.1602 12.9251 21.1602C17.8931 21.1602 21.9351 17.1182 21.9351 12.1502C21.9351 7.18116 17.8931 3.13916 12.9251 3.13916Z" fill="#888888"/>
+                                        <path d="M29.305 30.3111C28.921 30.3111 28.537 30.1651 28.244 29.8721L19.24 20.8681C18.654 20.2831 18.654 19.3321 19.24 18.7471C19.826 18.1611 20.775 18.1611 21.361 18.7471L30.365 27.7511C30.951 28.3361 30.951 29.2871 30.365 29.8721C30.072 30.1651 29.688 30.3111 29.305 30.3111Z" fill="#888888"/>
+                                    </svg>
+                                </button>
+                                <input type="text" class="form-search__input form-search__input_white" placeholder="ПОШУК">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="catalog-sidebar-menu">
+                        <div class="catalog-sidebar-menu__material">
+                            <ul class="catalog-sidebar-material-list">
+                                <li class="catalog-sidebar-material-list__item">
+                                    <div class="catalog-sidebar-material-link">
+                                        <div class="catalog-sidebar-material-link__img-wrap">
+                                            <img src="images/catalog-materials/ico/pvc.png" alt="pvc" class="catalog-sidebar-material-link__img">
+                                        </div>
+
+                                        <span class="catalog-sidebar-material-link__text">ПВХ</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-material-list__item">
+                                    <div class="catalog-sidebar-material-link">
+                                        <div class="catalog-sidebar-material-link__img-wrap">
+                                            <img src="images/catalog-materials/ico/wood.png" alt="wood" class="catalog-sidebar-material-link__img">
+                                        </div>
+
+                                        <span class="catalog-sidebar-material-link__text">ДЕРЕВО</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-material-list__item">
+                                    <div class="catalog-sidebar-material-link">
+                                        <div class="catalog-sidebar-material-link__img-wrap">
+                                            <img src="images/catalog-materials/ico/aluminum.png" alt="aluminum" class="catalog-sidebar-material-link__img">
+                                        </div>
+
+                                        <span class="catalog-sidebar-material-link__text">АЛЮМИНИЙ</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="catalog-sidebar-menu__line">
+                            <ul class="catalog-sidebar-line-list">
+                                <li class="catalog-sidebar-line-list__item">
+                                    <div class="catalog-sidebar-line-link">
+                                        <div class="catalog-sidebar-line-link__ico-wrap">
+                                            <svg
+                                                class="catalog-sidebar-line-link__ico"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="35" viewBox="0 0 147 76">
+                                                <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAABMCAQAAADDhE1kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiDBYRAzLZxD5vAAAEiklEQVR42u2b3XXiMBCFb/bkHacCvBXEHVipIO4gTgVxKsCpIE4FmA6cCiI6MBUsVLCmAu9DIDEJjEZ4ZNhdfbz4IGkkrvUzGomLVuENHgM/Tt2AvwMvEwsvE4vLzvMj6lM358xIcff+0JWphj51u84MtX3wg46Fl4mFl4mFl4mFl4mFl4mFl4nFZX8TZ0uACABQo+lrii9Tsan0OzWyg6UqBIRNquSxhFBQiHC98+0KS1TQR+8zWtVuUS2Ij24PoQ+WKVuKug3IGu0/qq3a1lBnamEv3xZzOTdl2x3RXtZI+w+GnV6k8YZbQ65rTFEfHBcHcSdTgmcyXYlutFPUiJl5r6GR2pl3NYVHKMn0e1GRSrLffmeEKRpU/AJuelMAjRGR/mgQ0Y7CUqR3SoT8zC5kMok0QyFYW4KHo8qNbF6VC5mKL4vxLq+28wJJ0KNfxp/xJBPyMuXkEFiIigRkZL81wW6LtEwpJkTqGkrUCQh6uqcJN6OsTBGmRKq0SEBC9qUV5liR5UdcD0pSpsAQS0/EjyQSIm2GEAohHg1tZiEnk2l9ux/0QGL+Me8UWBD5FM+cnHtJr29Pop7SlgRAhBARFEKMOynd2iqyZSykZKLXtxlyaYU+qFFv/OkAESJECBGzX0rDyyYjU0Kub9JOwOGfrPcO7IgoU/NMS8xNIfnuFnwnzgkRETVYc+dLCZnGxNS9RiLsBNihSCFKrhm3Qd41FJZkjtRmA7phSf68qLNjDMjJe83fW7qVaWkc+yk7SvTJnJQpYFvMDa+wg9uTlWsHsW4prOIUrg+gcq6fOzAvdquva5msojoDscKNbS93f5x5e2KH4Dtj5LaHBkOc+pZnN/Bi20ODIWQan+FEPsLUppcPc4dgYn8yNgAVv5cPdYegGGyGWuJp8xRAke7lCBl3Sz6UTDGyvX5KfYQtusxy56dHKAmp2DJJ3CHYUrUNkdqI3xjgfQKyVcnQdwjmSEi/diR6OsenMewAWUjJtEACoCBD9Hcn8qA0kcZskYxM23BJY1j6S+eSAEDwZQVr+puUkKkbLqkwJ3KOHQV7QyhkyKGh0eL3l5cV9q9AYqWrd9aeFL+IvBOU/PCFAYUE0d6YUrrzOhRhg9kWeffy02/ZTylWU4AHxHuX+67fn5KHGUteVS78poI82Y+RCkmlibRnJNAAQsOlHg0WLmRqkJGH5AUqkfh4gwXhOsasKKbmVeVmT1eSE7mcB9XXzoyb0dXWNyNTpTyo0nCVwlyeiSuZarzINNBA1qPsjH+rwV0gJceaSJXyoCq8HllyZSOxO5kagxATCbcPQEreODmE5TGry7BcYfgBpUgtDRS5YOxjZXsr3W30MiNTY6ErGA2UwaXdZYbINs7lViZtWHILscOEHD9Zy/sMN8f8CcR1LDwjJ/KR4FZ4iRRXuMdsr5OwwivucYX0uDt7fC9cHdX4ZtDDpwblZsbbba3ua/hf/duhljXn/8TKwsvEwsvEwsvEwsvEwsvEwsvEous3RaduzNkRbh+6Mj3b2/lf8IOOhZeJhZeJxUUb+KnbzB+/+XTQjLbnOwAAAABJRU5ErkJggg==" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-line-list__item">
+                                    <div class="catalog-sidebar-line-link">
+                                        <div class="catalog-sidebar-line-link__ico-wrap">
+                                            <svg
+                                                class="catalog-sidebar-line-link__ico"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="35" viewBox="0 0 147 76">
+                                                <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAABNCAQAAAAI2J7BAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiDBYRChTaCwDbAAAD30lEQVR42u2c3XmbMBRAT/rlPWwQOgF0gsgTmE5gNqgzgd0JSicomaDuBJEnKJ6gZAM8QfvgurFjjK/4sUQ/Hb/gGMTlGIHutcjN74AYzwVuiXm2HYT7vLMdwDjwmkR4TSJuD5YfKWyH4xgps93CoaYCbTsux1D7Bd/pRHhNIrwmEV6TCK9JhNckwmsScdu9iRNigpO/FVS2D7ULfWhSxITEwMOFNbcUgKakHNdQtoumkITkoppD7njgVeYGTT6OBKmtppTUSFAdERGfeCEnp7Qtopk2l3BFwbfOkvbcs+AXec31zCHMz6Y5XwaIY0ZCyqrl1k2F6qqPbm2qKd+XFnrnju98Ztlq26ZC9fo1z2+PWadLB5O0Y8F80PZbY6IpJBs8ni99fPf9Y6Jpyd0VIsotmWjERFNylYjuSW2IaEauSQnPpS1fmXDz7/WejzyxNYgpsS3lFPmdTonW2qDeZG8lJSsCMvHlf2pbyinysykQrbU8k+JWpPwQ70tZNFKLXFPcea25eF+BDRVN9F1IWQDZmTOqZCJspbQnpB65plKYxS1YsEFTUlC+OWBt+3DbYqJJTkT0b3lDhaaqkTYi5JqKlnuIOCzXjVSaXJPuZX9vpRUUaMFXkDYOOoOGz+ILkStJ2HJNFU+9J74RETNgy4qsUVbYur5110dlzCynMxlLmx3KjJ9o98ZLe0w0lQOXOR54ZuXemAlM6005TwPHM0W7KMq0Fp7yOHBEkYuizH8yyPjAetCYIvdqTm1+WSlQTAZVNXXtYt52DoFG8Z7HwWSllnycoUvqW5KRAYqQkJiAuLcy8MwtUX1UCPTRu52uoLM25VKi3P+MlIJjcTtdMYp7o3YCi1ZOGH5+U4EmIyVkwsZgu/jo3fKgun76aqpjrRu3vHFF0ysaZSTKIaSaFL/Fr/BsK5XBLIHKtpo2mgqDNpcNnwXiVkz2ODhSTZVBmzNWZ86oOZ/ErZSWjNQiv9OtDeo2U6as0QczLkNiEoN73ctYNa0My1sPncph2o6Oc8jvdPlgRbk6llc30YhcU3WFaTt7ntzqcqZF3uuMel7cmwxmNrxMrtDxtiRujZnAVFM5+Dh6g3JrxLTDNFkpUAYzS0z56qakNjldRcKEl94jWTNh7l5329GukKIJe3nOYMeWnKzTvU1LM/22tK835eQtnlo5Zo1m5WY3O6ZbWe61zBv/LfNGF7bYUFH+ndQzAj17+qle6qPkIqxJfEc1/+SUIR47HLmSOvxDrCK8JhFekwivSYTXJMJrEuE1iTgcN8W2g3GOcL9wqGmIR53/E3ynE+E1ifCaRNz4/8kr4Q/2st6dcor0uAAAAABJRU5ErkJggg==" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-line-list__item">
+                                    <div class="catalog-sidebar-line-link">
+                                        <div class="catalog-sidebar-line-link__ico-wrap">
+                                            <svg
+                                                class="catalog-sidebar-line-link__ico"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="35" viewBox="0 0 147 76">
+                                                <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAABMCAQAAADDhE1kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiDBYRDDi+icu+AAACNklEQVR42u3b0XGCQBAG4N+M76ED7UA6CB0kJZAOLMES0oGkkpAOSAeWgBVcXqKjYU3WYdllb/b3xcGbneMb0BWORSrxhsg/WaLAk/Uk5p8H6wn4SDCxsrx4/4Xeejozyxqrn3epSqdUCfG6eu1ONHHSsRJMrAQTK8HESjCxEkysBBMrwcTKcnwJAAUaFCNrNGiYVXvU6v8XhLrwMvVpbGp21S4VPrvwDhWOI2vsUTOrbtCOPnrvitx3U9ZQkl/hGUPJ/tJlCyXdEGQKJd83ZQkl0zcNd6nFI/HJkbiLU+KZGLkHfvVRt6pu0KKavI+a6OrlrY6nIcY2s+2jzn3TdBd5c4BSYMoBSoXJP5QSk3coNSbfUIpMnqFUmfxCKTN5hVJn8gllwOQRyoTJH5QRkzcoMyZfUIZMMlAvd0AJMFnczizJa1FAO9hSoCRHHnFgV+1E5qx+NNXsE6lIHTmyTyW7ajNqrmYnnSckMyZfSEZM3pBMmPwhGTB5RFJn8omkzOQVSZXJL5Iik2ckNSbfSEpM3pFUmPwjKTDlgHTBNMXCHaDGntz+SixqbrEhx/bEIh/6qeT3wWoo8UzBJIEErM5PRv4dBaQpVsvJIHGjgiTPlCWSNFOmSLJM2SJJMmWMJMeUNZJUQ7BGjU9i+/DhL2CLnhzLT4ft9DDXkWE6oGKP3WnvokTi6UxWgomVYGIlmFgJJlaCiZVgYiWYWLlsLz+sJzPfxNHESjCxEkysLNJa+6KEx3wDGx9vam2tOgkAAAAASUVORK5CYII=" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-line-list__item">
+                                    <div class="catalog-sidebar-line-link">
+                                        <div class="catalog-sidebar-line-link__ico-wrap">
+                                            <svg
+                                                class="catalog-sidebar-line-link__ico"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="35" viewBox="0 0 147 76">
+                                                <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAABMCAQAAADDhE1kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiDBYRDSsjLLshAAACT0lEQVR42u2b7VHCQBCGXxz+mw6gA9MBsQLoADqQDogViBUIHWAFxA5CB6EDOsAfygyo2dsYcu8ysw9/krnjZu+Z+9hwpHfMsIUT4I4dwG3gmlS4JhX9s+s1KnY4xsgw+ro417RCwY7LGPlJk086Fa5JhWtS4ZpUuCYVrkmFa1LhmlS013Rs+KlQIMdE2XohtJTF09Rv30RDBhh857br28n7mZNuii2KmGPi/7DXphG2yNkSwrA1AcACGyTsIGQsaALGWLFDkLGhCRhjyQ5Bwoom4AkpO4R67GiC5aXckqYxhuwQ6rCkCZizA6ij2yz88eJughnuxfoTq6K61VT8uMuxxFSoP0CCA1vJX8SddAfM8C7WSIkuBOKvTXOxNONoCBFfU4U1u9PNYex0hVCWcjSEYGiqhLKEoyGEtdFkFFvppVlckwrXpMI1qXBNKlyTCtekwjWpcE0qXJMKhqaM3enmMDQlQlnF0RCCoWkilFUcDSHia0pETQeWCBnGj7zS6UpJMyESW9MMC7G8pJkQiakpxQpvYo2d1UkX75xu1LB+mGUDqWW7g9JuNWnUXHa8CQ+dxn6BpSz8w2o6YEvTnB1APXY0vVrd5QA7mnaWx5IVTTvrj8MWNK2RWc2XTsR/GeOSPebYsCWEYWraYWn9/+AnGJr2KFFgYzdL+k17Tc/KegUA4NBw27/WO1JVu6+315RfpRt1rDptXY2Fne4GcE0qXJMK16TCNalwTSpck4rzvCllB2OO4eniXNMLOyq7+KRT4ZpUuCYVvWPiS3eYT0usboJTOHfhAAAAAElFTkSuQmCC" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-line-list__item">
+                                    <div class="catalog-sidebar-line-link">
+                                        <div class="catalog-sidebar-line-link__ico-wrap">
+                                            <svg
+                                                class="catalog-sidebar-line-link__ico"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="35" viewBox="0 0 147 76">
+                                                <image xlink:href="data:img/png;base64,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" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="catalog-sidebar-menu__categories">
+                            <ul class="catalog-sidebar-categories-list">
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Петльова група</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Привода</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Кутовi передачi</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Подовжувачі</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Ножицi</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Профілезалежні eлементи</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Додаткові елементи</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Шаблони </span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Гільйотини</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Регулювальні ключі</span>
+                                    </div>
+                                </li>
+
+                                <li class="catalog-sidebar-categories-list__item">
+                                    <div class="catalog-sidebar-categories-link">
+                                        <span class="catalog-sidebar-categories-link__text">Варіанти комплектів фурнітури</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-container__right">
+                <div class="catalog-page">
+                    <div class="catalog-page__breadcrumbs">
+                        <div class="breadcrumb">
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">Деревина</span>
+
+                                        <span class="breadcrumb-link__ico-wrap">
+                                            <svg
+                                                class="breadcrumb-link__ico"
+                                                width="5" viewBox="0 0 54 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.4199 100.16C1.94916 100.693 2.66835 100.995 3.4199 101C3.79289 101.003 4.16267 100.931 4.50657 100.786C4.85047 100.642 5.16126 100.429 5.4199 100.16L52.5799 52.9998C52.8448 52.7384 53.0551 52.427 53.1986 52.0837C53.3421 51.7404 53.416 51.3719 53.416 50.9998C53.416 50.6277 53.3421 50.2593 53.1986 49.9159C53.0551 49.5726 52.8448 49.2612 52.5799 48.9998L5.4199 1.82981C5.16059 1.55261 4.84817 1.33041 4.50122 1.17642C4.15428 1.02244 3.7799 0.939826 3.40037 0.933499C3.02084 0.927171 2.64392 0.997259 2.29203 1.13959C1.94014 1.28192 1.62048 1.49359 1.35208 1.76199C1.08367 2.0304 0.872009 2.35006 0.729678 2.70194C0.587346 3.05383 0.517259 3.43075 0.523587 3.81028C0.529914 4.18981 0.612528 4.56419 0.76651 4.91114C0.920493 5.25808 1.1427 5.57051 1.4199 5.82981L46.5799 50.9998L1.4199 96.1598C1.15625 96.4219 0.947019 96.7335 0.804243 97.0768C0.661468 97.42 0.587965 97.7881 0.587965 98.1598C0.587965 98.5316 0.661468 98.8996 0.804243 99.2429C0.947019 99.5861 1.15625 99.8977 1.4199 100.16V100.16Z" fill="#4c4c4c"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">Smart Line S+</span>
+
+                                        <span class="breadcrumb-link__ico-wrap">
+                                            <svg
+                                                class="breadcrumb-link__ico"
+                                                width="5" viewBox="0 0 54 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.4199 100.16C1.94916 100.693 2.66835 100.995 3.4199 101C3.79289 101.003 4.16267 100.931 4.50657 100.786C4.85047 100.642 5.16126 100.429 5.4199 100.16L52.5799 52.9998C52.8448 52.7384 53.0551 52.427 53.1986 52.0837C53.3421 51.7404 53.416 51.3719 53.416 50.9998C53.416 50.6277 53.3421 50.2593 53.1986 49.9159C53.0551 49.5726 52.8448 49.2612 52.5799 48.9998L5.4199 1.82981C5.16059 1.55261 4.84817 1.33041 4.50122 1.17642C4.15428 1.02244 3.7799 0.939826 3.40037 0.933499C3.02084 0.927171 2.64392 0.997259 2.29203 1.13959C1.94014 1.28192 1.62048 1.49359 1.35208 1.76199C1.08367 2.0304 0.872009 2.35006 0.729678 2.70194C0.587346 3.05383 0.517259 3.43075 0.523587 3.81028C0.529914 4.18981 0.612528 4.56419 0.76651 4.91114C0.920493 5.25808 1.1427 5.57051 1.4199 5.82981L46.5799 50.9998L1.4199 96.1598C1.15625 96.4219 0.947019 96.7335 0.804243 97.0768C0.661468 97.42 0.587965 97.7881 0.587965 98.1598C0.587965 98.5316 0.661468 98.8996 0.804243 99.2429C0.947019 99.5861 1.15625 99.8977 1.4199 100.16V100.16Z" fill="#4c4c4c"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">Привода</span>
+
+                                        <span class="breadcrumb-link__ico-wrap">
+                                            <svg
+                                                class="breadcrumb-link__ico"
+                                                width="5" viewBox="0 0 54 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.4199 100.16C1.94916 100.693 2.66835 100.995 3.4199 101C3.79289 101.003 4.16267 100.931 4.50657 100.786C4.85047 100.642 5.16126 100.429 5.4199 100.16L52.5799 52.9998C52.8448 52.7384 53.0551 52.427 53.1986 52.0837C53.3421 51.7404 53.416 51.3719 53.416 50.9998C53.416 50.6277 53.3421 50.2593 53.1986 49.9159C53.0551 49.5726 52.8448 49.2612 52.5799 48.9998L5.4199 1.82981C5.16059 1.55261 4.84817 1.33041 4.50122 1.17642C4.15428 1.02244 3.7799 0.939826 3.40037 0.933499C3.02084 0.927171 2.64392 0.997259 2.29203 1.13959C1.94014 1.28192 1.62048 1.49359 1.35208 1.76199C1.08367 2.0304 0.872009 2.35006 0.729678 2.70194C0.587346 3.05383 0.517259 3.43075 0.523587 3.81028C0.529914 4.18981 0.612528 4.56419 0.76651 4.91114C0.920493 5.25808 1.1427 5.57051 1.4199 5.82981L46.5799 50.9998L1.4199 96.1598C1.15625 96.4219 0.947019 96.7335 0.804243 97.0768C0.661468 97.42 0.587965 97.7881 0.587965 98.1598C0.587965 98.5316 0.661468 98.8996 0.804243 99.2429C0.947019 99.5861 1.15625 99.8977 1.4199 100.16V100.16Z" fill="#4c4c4c"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">Поворотные</span>
+
+                                        <span class="breadcrumb-link__ico-wrap">
+                                            <svg
+                                                class="breadcrumb-link__ico"
+                                                width="5" viewBox="0 0 54 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.4199 100.16C1.94916 100.693 2.66835 100.995 3.4199 101C3.79289 101.003 4.16267 100.931 4.50657 100.786C4.85047 100.642 5.16126 100.429 5.4199 100.16L52.5799 52.9998C52.8448 52.7384 53.0551 52.427 53.1986 52.0837C53.3421 51.7404 53.416 51.3719 53.416 50.9998C53.416 50.6277 53.3421 50.2593 53.1986 49.9159C53.0551 49.5726 52.8448 49.2612 52.5799 48.9998L5.4199 1.82981C5.16059 1.55261 4.84817 1.33041 4.50122 1.17642C4.15428 1.02244 3.7799 0.939826 3.40037 0.933499C3.02084 0.927171 2.64392 0.997259 2.29203 1.13959C1.94014 1.28192 1.62048 1.49359 1.35208 1.76199C1.08367 2.0304 0.872009 2.35006 0.729678 2.70194C0.587346 3.05383 0.517259 3.43075 0.523587 3.81028C0.529914 4.18981 0.612528 4.56419 0.76651 4.91114C0.920493 5.25808 1.1427 5.57051 1.4199 5.82981L46.5799 50.9998L1.4199 96.1598C1.15625 96.4219 0.947019 96.7335 0.804243 97.0768C0.661468 97.42 0.587965 97.7881 0.587965 98.1598C0.587965 98.5316 0.661468 98.8996 0.804243 99.2429C0.947019 99.5861 1.15625 99.8977 1.4199 100.16V100.16Z" fill="#4c4c4c"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">Константные</span>
+
+                                        <span class="breadcrumb-link__ico-wrap">
+                                            <svg
+                                                class="breadcrumb-link__ico"
+                                                width="5" viewBox="0 0 54 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.4199 100.16C1.94916 100.693 2.66835 100.995 3.4199 101C3.79289 101.003 4.16267 100.931 4.50657 100.786C4.85047 100.642 5.16126 100.429 5.4199 100.16L52.5799 52.9998C52.8448 52.7384 53.0551 52.427 53.1986 52.0837C53.3421 51.7404 53.416 51.3719 53.416 50.9998C53.416 50.6277 53.3421 50.2593 53.1986 49.9159C53.0551 49.5726 52.8448 49.2612 52.5799 48.9998L5.4199 1.82981C5.16059 1.55261 4.84817 1.33041 4.50122 1.17642C4.15428 1.02244 3.7799 0.939826 3.40037 0.933499C3.02084 0.927171 2.64392 0.997259 2.29203 1.13959C1.94014 1.28192 1.62048 1.49359 1.35208 1.76199C1.08367 2.0304 0.872009 2.35006 0.729678 2.70194C0.587346 3.05383 0.517259 3.43075 0.523587 3.81028C0.529914 4.18981 0.612528 4.56419 0.76651 4.91114C0.920493 5.25808 1.1427 5.57051 1.4199 5.82981L46.5799 50.9998L1.4199 96.1598C1.15625 96.4219 0.947019 96.7335 0.804243 97.0768C0.661468 97.42 0.587965 97.7881 0.587965 98.1598C0.587965 98.5316 0.661468 98.8996 0.804243 99.2429C0.947019 99.5861 1.15625 99.8977 1.4199 100.16V100.16Z" fill="#4c4c4c"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="breadcrumb-list__item">
+                                    <div class="breadcrumb-link">
+                                        <span class="breadcrumb-link__text">15 мм дорнмасс</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="catalog-page__categories">
+                        <ul class="catalog-page-categories-list">
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/1.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Петльова група</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/2.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Привода</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/3.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Кутові передачі</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/4.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Подовжувачі</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/5.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Ножицi</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/6.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Профілезалежні eлементи</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/7.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Додаткові елементи</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/1.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Шаблони </span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/2.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Гільйотини</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/3.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Регулювальні ключі</span>
+                                </div>
+                            </li>
+
+                            <li class="catalog-page-categories-list__item">
+                                <div class="catalog-page-categories-link">
+                                    <div class="catalog-page-categories-link__img-wrap">
+                                        <img src="images/catalog-variants/4.png" alt="img" class="catalog-page-categories-link__img">
+                                    </div>
+
+                                    <span class="catalog-page-categories-link__text">Варіанти комплектів фурнітури</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

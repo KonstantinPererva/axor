@@ -1,0 +1,12 @@
+.catalog-container {
+  display: flex;
+
+  &__left {
+    flex-basis: 90px;
+    background: #373a3c;
+  }
+
+  &__right {
+    flex-grow: 1;
+  }
+}

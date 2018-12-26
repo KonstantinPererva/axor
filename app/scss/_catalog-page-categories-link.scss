@@ -1,0 +1,40 @@
+.catalog-page-categories-link {
+  color: #000;
+  text-align: center;
+  padding: 5px 0 15px;
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+      color: $c-red;
+
+      & .catalog-page-categories-link__text {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  &__img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 10px;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: $f-dr;
+    display: inline-block;
+    border-bottom: 1px solid currentColor;
+    transition: .15s;
+    padding: 15px 0 0;
+  }
+}

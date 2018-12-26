@@ -1,0 +1,18 @@
+.catalog-page-line-link {
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+      outline: 2px solid $c-red;
+      outline-offset: -2px;
+    }
+  }
+
+  &__img-wrap {
+    display: block;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+}

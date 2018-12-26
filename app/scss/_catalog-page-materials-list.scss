@@ -1,0 +1,13 @@
+.catalog-page-materials-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 33.33%;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,39 @@
+.breadcrumb-link {
+  display: flex;
+  align-items: center;
+  color: #4c4c4c;
+  text-decoration: none;
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+      color: $c-red;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  &:focus, &:active {
+    text-decoration: none;
+    color: $c-red;
+    outline: none;
+  }
+
+
+  &__text {
+    display: block;
+    border-bottom: 1px solid currentColor;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: $f-dr;
+  }
+
+  &__ico-wrap {
+    display: block;
+    margin: 0 8px;
+  }
+
+  &__ico {
+    display: block;
+  }
+}
