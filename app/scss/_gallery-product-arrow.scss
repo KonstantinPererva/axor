@@ -1,0 +1,19 @@
+.gallery-product-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100px;
+  width: 31px;
+  display: block;
+
+  &_prev {
+    display: block;
+    left: -70px;
+  }
+
+  &_next {
+    display: block;
+    right: -70px;
+  }
+}

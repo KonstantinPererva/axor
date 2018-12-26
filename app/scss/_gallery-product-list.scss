@@ -1,0 +1,9 @@
+.gallery-product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    max-width: 600px;
+  }
+}
