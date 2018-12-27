@@ -1,0 +1,11 @@
+.product-species-title {
+  padding: 10px 0;
+
+  &__text {
+    display: block;
+    font-size: 28px;
+    line-height: 32px;
+    font-family: $f-dl;
+    color: #000;
+  }
+}

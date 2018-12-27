@@ -1,0 +1,33 @@
+.product-characteristics {
+  padding: 20px 0 10px 30px;
+
+  &__row {
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 0;
+
+    &:first-child {
+      border-top: 1px solid #d6d6d6;
+    }
+  }
+
+  &__col {
+    width: 50%;
+  }
+
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: $f-dr;
+    
+    &_property {
+      color: #777777;
+    }
+    
+    &_value {
+      color: #000;
+    }
+  }
+}

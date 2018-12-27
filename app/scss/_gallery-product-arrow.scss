@@ -3,17 +3,43 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  height: 100px;
-  width: 31px;
-  display: block;
+  border: 0;
+  background: none;
+  outline: none;
+  height: 120px;
+  width: 60px;
+  user-select: none;
+  padding: 0;
+
+  @media (max-width: 1440px) {
+    width: 45px;
+  }
+
+  @media (max-width: 1366px) {
+    width: 40px;
+  }
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &:focus, &:active {
+    outline: none;
+  }
 
   &_prev {
-    display: block;
-    left: -70px;
+    left: -17%;
   }
 
   &_next {
+    right: -17%;
+  }
+
+  &__ico {
     display: block;
-    right: -70px;
+    margin: 0 auto;
   }
 }

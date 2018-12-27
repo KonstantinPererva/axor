@@ -1,0 +1,13 @@
+.product-symbol-title {
+  margin: 0;
+  padding: 10px 0;
+
+  &__text {
+    display: block;
+    font-size: 28px;
+    line-height: 32px;
+    font-family: $f-dl;
+    color: #000;
+    margin: 0;
+  }
+}

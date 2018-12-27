@@ -1,4 +1,10 @@
 .catalog-sidebar-line-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 18px;
+  border: 1px solid #888888;
   text-decoration: none;
   outline: none;
   transition: .15s;
@@ -8,6 +14,11 @@
       cursor: pointer;
       text-decoration: none;
       outline: none;
+      border-color: #fff;
+
+      & .catalog-sidebar-line-link__ico path {
+        fill: #fff;
+      }
     }
   }
 
@@ -16,10 +27,23 @@
     text-decoration: none;
   }
 
-  &__ico-wrap {}
+  &__ico-wrap {
+    display: block;
+  }
 
   &__ico {
     display: block;
-    margin: 0 auto;
+
+    & path {
+      transition: .15s;
+    }
+  }
+
+  &_active {
+    background: #ff0000;
+
+    & .catalog-sidebar-line-link__ico path {
+      fill: #fff;
+    }
   }
 }

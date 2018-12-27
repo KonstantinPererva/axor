@@ -1,0 +1,17 @@
+.product-descr {
+  padding: 10px 0;
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $f-dr;
+    color: #000;
+    margin: 0;
+    padding: 6px 0;
+
+    &_footnote {
+      text-indent: 10px;
+    }
+  }
+}

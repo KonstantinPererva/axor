@@ -1,14 +1,43 @@
 .product-detail {
-  display: flex;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 
   &__col {
 
     &_left {
       width: 60%;
+      float: left;
+      padding: 0 40px 0 0;
+
+      @media (max-width: 1440px) {
+        width: 50%;
+      }
+
+      @media (max-width: 1340px) {
+        width: 100%;
+        float: none;
+      }
     }
 
     &_right {
       width: 40%;
+      float: right;
+
+      @media (max-width: 1440px) {
+        width: 50%;
+      }
+
+      @media (max-width: 1340px) {
+        width: 100%;
+        float: none;
+      }
     }
+  }
+
+  &__button {
+    padding: 40px 0;
   }
 }

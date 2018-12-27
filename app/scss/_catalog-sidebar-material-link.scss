@@ -10,6 +10,10 @@
       color: #fff;
       text-decoration: none;
       outline: none;
+
+      & .catalog-sidebar-material-link__img path {
+        stroke: #fff;
+      }
     }
   }
 
@@ -26,6 +30,10 @@
   &__img {
     display: block;
     margin: 0 auto;
+
+    & path {
+      transition: .15s;
+    }
   }
 
   &__text {

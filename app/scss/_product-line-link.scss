@@ -1,0 +1,17 @@
+.product-line-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 18px;
+  background: #ed2024;
+  border: 1px solid #ed2024;
+
+  &__ico-wrap {
+    display: block;
+  }
+
+  &__ico {
+    display: block;
+  }
+}

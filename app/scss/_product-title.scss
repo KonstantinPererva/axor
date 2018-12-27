@@ -1,0 +1,13 @@
+.product-title {
+  margin: 0;
+  padding: 10px 0 20px;
+
+  &__text {
+    display: block;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: $f-dl;
+    color: #000;
+    margin: 0;
+  }
+}
