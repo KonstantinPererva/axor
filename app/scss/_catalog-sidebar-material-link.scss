@@ -1,4 +1,5 @@
 .catalog-sidebar-material-link {
+  display: block;
   color: #888;
   text-decoration: none;
   outline: none;
@@ -21,6 +22,14 @@
     outline: none;
     text-decoration: none;
     color: #fff;
+  }
+
+  &_active {
+    color: #fff;
+
+    & .catalog-sidebar-material-link__img path {
+      stroke: #fff;
+    }
   }
 
   &__img-wrap {
