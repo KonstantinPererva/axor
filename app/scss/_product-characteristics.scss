@@ -1,11 +1,23 @@
 .product-characteristics {
   padding: 20px 0 10px 30px;
 
+  @media (max-width: 1440px) {
+    padding: 20px 0 10px 10px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px 0 10px;
+  }
+
   &__row {
     border-bottom: 1px solid #d6d6d6;
     display: flex;
     align-items: flex-start;
     padding: 16px 0;
+
+    @media (max-width: 767px) {
+      padding: 12px 0;
+    }
 
     &:first-child {
       border-top: 1px solid #d6d6d6;
@@ -14,6 +26,14 @@
 
   &__col {
     width: 50%;
+
+    &:first-child {
+      padding: 0 7px 0 0;
+    }
+
+    &:last-child {
+      padding: 0 0 0 7px;
+    }
   }
 
   &__text {
@@ -21,6 +41,10 @@
     font-size: 18px;
     line-height: 21px;
     font-family: $f-dr;
+
+    @media (max-width: 1440px) {
+      font-size: 16px;
+    }
     
     &_property {
       color: #777777;

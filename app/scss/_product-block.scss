@@ -1,4 +1,8 @@
 .product-block {
   display: flex;
   padding: 10px 0;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 }

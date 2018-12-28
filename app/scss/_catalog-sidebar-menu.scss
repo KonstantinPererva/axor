@@ -8,5 +8,18 @@
   &__categories {
     width: 400px;
     padding: 20px 46px;
+
+    @media (max-width: 1440px) {
+      width: 368px;
+      padding: 20px 30px;
+    }
+
+    @media (max-width: 1150px) {
+      width: 350px;
+    }
+
+    @media (max-width: 360px) {
+      width: 290px;
+    }
   }
 }

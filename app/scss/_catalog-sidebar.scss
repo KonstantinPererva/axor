@@ -1,5 +1,17 @@
 .catalog-sidebar {
   &__search{
     padding: 30px 46px;
+
+    @media (max-width: 1440px) {
+      padding: 30px;
+    }
+
+    @media (max-width: 1150px) {
+      display: none;
+    }
+
+    & .form-search__row {
+      max-width: 100%;
+    }
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   color: #4c4c4c;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     @media (hover: hover) {
@@ -22,7 +22,6 @@
 
   &__text {
     display: block;
-    border-bottom: 1px solid currentColor;
     font-size: 12px;
     line-height: 12px;
     font-family: $f-dr;

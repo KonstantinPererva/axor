@@ -380,46 +380,70 @@
                         </div>
                     </div>
 
+                    <div class="catalog-page__search catalog-page__search_mob">
+                        <form action="!" class="form-search">
+                            <div class="form-search__row">
+                                <button type="submit" class="form-search__button">
+                                    <svg
+                                        class="form-search__ico"
+                                        width="25"
+                                        height="25"
+                                        viewBox="0 0 31 31"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.9251 24.1602C6.30206 24.1602 0.914062 18.7722 0.914062 12.1502C0.914062 5.52816 6.30206 0.13916 12.9251 0.13916C19.5481 0.13916 24.9351 5.52716 24.9351 12.1502C24.9351 18.7732 19.5471 24.1602 12.9251 24.1602ZM12.9251 3.13916C7.95606 3.13916 3.91406 7.18116 3.91406 12.1502C3.91406 17.1182 7.95606 21.1602 12.9251 21.1602C17.8931 21.1602 21.9351 17.1182 21.9351 12.1502C21.9351 7.18116 17.8931 3.13916 12.9251 3.13916Z" fill="#707070"/>
+                                        <path d="M29.305 30.3111C28.921 30.3111 28.537 30.1651 28.244 29.8721L19.24 20.8681C18.654 20.2831 18.654 19.3321 19.24 18.7471C19.826 18.1611 20.775 18.1611 21.361 18.7471L30.365 27.7511C30.951 28.3361 30.951 29.2871 30.365 29.8721C30.072 30.1651 29.688 30.3111 29.305 30.3111Z" fill="#707070"/>
+                                    </svg>
+                                </button>
+                                <input type="text" class="form-search__input" placeholder="ПОШУК">
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="catalog-page__detail">
                         <div class="product-detail">
                             <div class="product-detail__col product-detail__col_left">
-                                <div class="gallery-product-wrapper">
-                                    <div class="swiper-container gallery-product">
-                                        <ul class="swiper-wrapper gallery-product-list">
-                                            <li class="swiper-slide gallery-product-list__item">
-                                                <div class="gallery-product-card">
-                                                    <div class="gallery-product-card__img-wrap">
-                                                        <img src="images/catalog-products/1.jpg" alt="img" class="gallery-product-card__img">
+                                <div class="product-detail__slider">
+                                    <div class="gallery-product-wrapper">
+                                        <div class="swiper-container gallery-product">
+                                            <ul class="swiper-wrapper gallery-product-list">
+                                                <li class="swiper-slide gallery-product-list__item">
+                                                    <div class="gallery-product-card">
+                                                        <div class="gallery-product-card__img-wrap">
+                                                            <img src="images/catalog-products/1.jpg" alt="img" class="gallery-product-card__img">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
+                                                </li>
 
-                                            <li class="swiper-slide gallery-product-list__item">
-                                                <div class="gallery-product-card">
-                                                    <div class="gallery-product-card__img-wrap">
-                                                        <img src="images/catalog-products/2.jpg" alt="img" class="gallery-product-card__img">
+                                                <li class="swiper-slide gallery-product-list__item">
+                                                    <div class="gallery-product-card">
+                                                        <div class="gallery-product-card__img-wrap">
+                                                            <img src="images/catalog-products/2.jpg" alt="img" class="gallery-product-card__img">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="gallery-product-navigation">
-                                        <button class="gallery-product-arrow gallery-product-arrow_prev">
-                                            <svg
-                                                class="gallery-product-arrow__ico"
-                                                width="31" height="100" viewBox="0 0 31 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M29.9998 0L3.42715e-05 50.0423C2.58501e-05 50.0423 -3.84426e-05 50.0422 3.42715e-05 50.0423L30.0905 100L30.8181 99.3142L1.13985 50.0417L30.7291 0.684252L29.9998 0Z" fill="black"/>
-                                            </svg>
-                                        </button>
+                                        <div class="gallery-product-navigation">
+                                            <button class="gallery-product-arrow gallery-product-arrow_prev">
+                                                <svg
+                                                    class="gallery-product-arrow__ico"
+                                                    width="31" height="100" viewBox="0 0 31 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M29.9998 0L3.42715e-05 50.0423C2.58501e-05 50.0423 -3.84426e-05 50.0422 3.42715e-05 50.0423L30.0905 100L30.8181 99.3142L1.13985 50.0417L30.7291 0.684252L29.9998 0Z" fill="black"/>
+                                                </svg>
+                                            </button>
 
-                                        <button class="gallery-product-arrow gallery-product-arrow_next">
-                                            <svg
-                                                class="gallery-product-arrow__ico"
-                                                width="31" height="100" viewBox="0 0 31 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0.818047 100L30.8178 49.9577C30.8178 49.9577 30.8179 49.9578 30.8178 49.9577L0.727419 -0.0001297L-0.000211716 0.685837L29.678 49.9583L0.0888023 99.3157L0.818047 100Z" fill="black"/>
-                                            </svg>
-                                        </button>
+                                            <button class="gallery-product-arrow gallery-product-arrow_next">
+                                                <svg
+                                                    class="gallery-product-arrow__ico"
+                                                    width="31" height="100" viewBox="0 0 31 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.818047 100L30.8178 49.9577C30.8178 49.9577 30.8179 49.9578 30.8178 49.9577L0.727419 -0.0001297L-0.000211716 0.685837L29.678 49.9583L0.0888023 99.3157L0.818047 100Z" fill="black"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="gallery-product-pagination"></div>
                                     </div>
                                 </div>
                             </div>
@@ -700,7 +724,7 @@
                                 </div>
 
                                 <div class="product-detail__button">
-                                    <a href="#" class="button-component-table">
+                                    <a href="#" target="_blank" class="button-component-table">
                                         <span class="button-component-table__text">Відкрити таблицю</span>
 
                                         <span class="button-component-table__text">комплектуючих у PDF</span>
@@ -1116,6 +1140,16 @@
                 </div>
             </div>
         </div>
+
+        <button class="button-menu-left">
+            <svg
+                class="button-menu-left__ico"
+                width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.99902V-0.000976562H20V2.99902H0ZM18 8.99902H2V6.99902H18V8.99902ZM15 14.999H5V12.999H15V14.999Z" fill="white"/>
+            </svg>
+        </button>
+
+        <span class="substrate"></span>
     </div>
 
     <script src="libs/swiper/swiper.min.js"></script>
@@ -1126,8 +1160,21 @@
             navigation: {
                 nextEl: '.gallery-product-arrow_next',
                 prevEl: '.gallery-product-arrow_prev'
+            },
+            breakpoints: {
+                1150: {
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: {
+                        el: '.gallery-product-pagination',
+                        type: 'bullets',
+                        clickable: true
+                    }
+                }
             }
         });
     </script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

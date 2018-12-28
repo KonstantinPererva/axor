@@ -2,8 +2,27 @@
   display: flex;
 
   &__left {
-    flex-basis: 90px;
     background: #373a3c;
+
+    @media (max-width: 1150px) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-100%);
+      z-index: 3000;
+      transition: .3s;
+      height: 100%;
+      overflow-y: auto;
+      padding: 0 0 60px;
+    }
+
+    &_active {
+      transform: translateX(0);
+    }
+
+    &_narrow {
+      width: 90px;
+    }
   }
 
   &__right {

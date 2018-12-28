@@ -11,6 +11,16 @@
     font-family: $f-dr;
     color: #000;
     margin: 0 12px 0 0;
+
+    @media (max-width: 1440px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 27px;
+    }
   }
 
   &__num {
@@ -22,5 +32,19 @@
     color: #000;
     text-transform: uppercase;
     margin: 0 20px 0 0;
+
+    @media (max-width: 1440px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    @media (max-width: 360px) {
+      margin: 0 12px 0 0;
+    }
   }
 }

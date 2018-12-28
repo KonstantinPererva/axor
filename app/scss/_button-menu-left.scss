@@ -1,0 +1,32 @@
+.button-menu-left {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 80px;
+  border-radius: 0 10px 10px 0;
+  background: #373a3c;
+  border: 0;
+  padding: 0;
+  z-index: 2000;
+  user-select: none;
+  outline: none;
+  transition: .15s;
+
+  @media (max-width: 1150px) {
+    display: flex;
+  }
+
+  &:focus, &:active {
+    outline: none;
+  }
+
+  &__ico {
+    display: block;
+  }
+}

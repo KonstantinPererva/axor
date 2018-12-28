@@ -32,10 +32,18 @@
 
   &_prev {
     left: -17%;
+
+    @media (max-width: 1366px) {
+      left: -50px;
+    }
   }
 
   &_next {
     right: -17%;
+
+    @media (max-width: 1366px) {
+      right: -50px;
+    }
   }
 
   &__ico {
