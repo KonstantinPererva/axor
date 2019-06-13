@@ -5,6 +5,10 @@
   outline: none;
   padding: 8px 0;
   transition: .15s;
+  
+  &_active {
+    color: #fff;
+  }
 
   &:hover {
     @media (hover: hover) {
@@ -25,7 +29,7 @@
     display: block;
     font-size: 14px;
     line-height: 17px;
-    border-bottom: 1px solid currentColor;
+    //border-bottom: 1px solid currentColor;
     font-family: $f-dr;
   }
 }

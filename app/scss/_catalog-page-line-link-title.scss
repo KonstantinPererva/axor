@@ -1,0 +1,48 @@
+.catalog-page-line-link-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  transition: all 2s;
+
+  &__hold {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+    margin: auto;
+  }
+
+  &__text {
+    display: block;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 21px;
+    line-height: 25px;
+    font-family: $f-dr;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 6px 0 0;
+  }
+  
+  &__ico-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f00;
+    height: 28px;
+    padding: 0 4px;
+
+    &__ico {
+      display: block;
+    }
+  }
+}
