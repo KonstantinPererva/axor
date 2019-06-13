@@ -17,15 +17,10 @@
 
   &__text {
     display: inline-block;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 44px;
     font-family: $f-dr;
     border-bottom: 1px solid currentColor;
-
-    @media (max-width: 1440px) {
-      font-size: 30px;
-      line-height: 44px;
-    }
 
     @media (max-width: 767px) {
       font-size: 24px;

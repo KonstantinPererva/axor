@@ -1,9 +1,22 @@
 .catalog-page-line-link {
+  position: relative;
+
   &:hover {
     @media (hover: hover) {
       cursor: pointer;
       outline: 2px solid $c-red;
       outline-offset: -2px;
+
+      & .catalog-page-line-link-title {
+        height: 100%;
+      }
+
+      & .catalog-page-line-link-title__hold {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+      }
     }
   }
 
